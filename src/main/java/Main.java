@@ -15,6 +15,7 @@ public class Main {
      * @return the maximum integer absolute value in the array
      */
     public static int maxAbsoluteVal(String[] numbers) {
-
+        // Thomas says to write comments
+        return Arrays.stream(numbers).mapToInt(number -> Integer.valueOf(number)).map(val -> Math.abs(val)).max().getAsInt();
     }
 }
